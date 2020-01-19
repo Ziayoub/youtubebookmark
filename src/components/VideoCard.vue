@@ -3,7 +3,7 @@
     <img class="card-img-top" :src="cover" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{ title }}</h5>
-      <p class="card-text">{{ description || '' }}</p>
+      <p class="card-text">{{ description }}</p>
       <a href="#" class="btn btn-primary">{{ buttonText || 'ButtonText' }}</a>
     </div>
   </div>
@@ -12,9 +12,16 @@
 <script>
 export default {
   props: {
-    title: String,
+    title: {
+      type: String,
+      default: '',
+      required: true
+    },
     cover: String,
-    description: String,
+    description: {
+      type: String,
+      default: ''
+    },
     buttonText: String,
   }
 }

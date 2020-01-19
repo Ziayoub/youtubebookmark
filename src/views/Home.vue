@@ -1,7 +1,7 @@
 <template>
   <div class="app">
 
-    <div class="sidebar">
+    <div class="sidebar-layout">
       <Sidebar/>
     </div>
 
@@ -42,9 +42,9 @@ export default {
   flex-direction: row;
   margin: 0;
 }
-.sidebar {
-  background: #D7E8D4;
+.sidebar-layout {
   flex: 1;
+  border-right: 1px solid whitesmoke;
 }
 .right {
   display: flex;
@@ -61,9 +61,13 @@ export default {
   background-color: whitesmoke;
 }
 .header {
-  background: yellowgreen;
+ border-bottom: 1px solid #ccc;
+ height: 60px;
+ 
+
+ 
 }
 .header, .content-container, .sidebar {
-  padding: 1em;
+  
 }
 </style>
