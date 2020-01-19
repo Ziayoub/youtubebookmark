@@ -6,13 +6,10 @@
 
 <style scoped>
 .logo {
-    display: flex;
-    height: 60px;
-    padding: 17px 10px;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-
+  padding: 20px;
+  text-align: left;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .logo span {

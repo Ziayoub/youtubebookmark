@@ -2,8 +2,12 @@
     <div class="menu">
         <div class="menu-header">Menu</div>
         <div class="menu-list">
-            <div class="menu-item">Categories</div>
-            <div class="menu-item">All Videos</div>
+          <div class="menu-item">
+            <router-link to="/">Categories</router-link>
+          </div>
+          <div class="menu-item">
+            <router-link to="/all-videos">All Videos</router-link>
+          </div>
         </div>
     </div>
 
@@ -13,13 +17,14 @@
 .menu {
     padding: 20px 0px;;
     text-align: left;
-    /*background-color: red;*/
+    height: 100%;
+    /* border-right: 1px solid #ccc; */
 }
 
 .menu-header {
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 10px;
+    font-size: 12px;
     color: gray;
     padding: 20px;
 }

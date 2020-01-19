@@ -1,18 +1,15 @@
 <template>
-  <div class="app">
-
+  <div class="app-videos">
     <div class="sidebar-layout">
       <Sidebar/>
     </div>
 
     <div class="right">
-      <div class="header">
-        <Header/>
-      </div>
+      <Header/>
 
       <div class="content">
         <div class="content-container">
-          <VideoCards/>
+          <VideosContainer />
         </div>
       </div>
 
@@ -23,20 +20,20 @@
 <script>
 // @ is an alias to /src
 import Sidebar from '@/components/Sidebar.vue'
-import VideoCards from '@/components/VideoCards.vue'
+import VideosContainer from '@/components/VideosContainer.vue'
 import Header from '@/components/Header.vue'
 
 export default {
   components: {
     Sidebar,
     Header,
-    VideoCards,
+    VideosContainer,
   }
 }
 </script>
 
 <style>
-.app {
+.app-videos {
   display: flex;
   min-height: 100vh;
   flex-direction: row;
@@ -44,11 +41,12 @@ export default {
 }
 .sidebar-layout {
   flex: 1;
-  border-right: 1px solid whitesmoke;
 }
 .right {
   display: flex;
   flex-direction: column;
+  background-color: whitesmoke;
+  border-left: 1px solid rgb(220, 220, 220);
   flex: 5;
 }
 .content {
@@ -58,16 +56,5 @@ export default {
 .content > .content-container {
   flex: 4;
   min-height: 60vh;
-  background-color: whitesmoke;
-}
-.header {
- border-bottom: 1px solid #ccc;
- height: 60px;
- 
-
- 
-}
-.header, .content-container, .sidebar {
-  
 }
 </style>

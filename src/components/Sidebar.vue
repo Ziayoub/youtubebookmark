@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar-content">
+  <div class="sidebar-content d-flex flex-column h-100">
     <Logo/>
     <Menu/>
   </div>
@@ -16,8 +16,9 @@ export default {
   }
 }
 </script>
-  
-<style>
 
+<style>
+.sidebar-content {
+}
 
 </style>
