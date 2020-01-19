@@ -3,7 +3,9 @@
     - email
     - password
 - Categories
-    - name 
+    - name
+    - color
+    - icon
 - Videos
     - name
     - url
