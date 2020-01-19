@@ -2,12 +2,12 @@
     <div class="menu">
         <div class="menu-header">Menu</div>
         <div class="menu-list">
-          <div class="menu-item">
-            <router-link to="/">Categories</router-link>
-          </div>
-          <div class="menu-item">
-            <router-link to="/all-videos">All Videos</router-link>
-          </div>
+            <router-link to="/">
+              <div class="menu-item">Categories</div>
+            </router-link>
+            <router-link to="/all-videos">
+              <div class="menu-item">All Videos</div>
+          </router-link>
         </div>
     </div>
 
@@ -37,6 +37,6 @@
 }
 
 .menu-item:hover {
-    background-color: aqua;
+    background-color: rgb(245, 245, 245);
 }
 </style>

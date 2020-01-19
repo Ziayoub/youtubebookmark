@@ -6,7 +6,10 @@
 * {
   box-sizing: border-box;
 }
-
+a {
+  color: #007bff !important;
+  text-decoration: none !important; /* no underline */
+}
 .sidebar-layout {
   flex: 1;
 }
