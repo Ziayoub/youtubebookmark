@@ -1,10 +1,12 @@
 <template>
     <div class="p-5 d-flex flex-wrap">
         <h2>Video</h2>
-        <div class="video embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=ATDYLTnGJV0"></iframe>
-        </div> 
-        
+        <div class="d-flex w-100 mt-5 justify-content-center">
+            <div class="video embed-responsive embed-responsive-21by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=ATDYLTnGJV0"></iframe>
+            </div> 
+            
+        </div>
     </div>
 </template>
 
@@ -13,4 +15,5 @@
     width: 70%;
     
 }
+
 </style>

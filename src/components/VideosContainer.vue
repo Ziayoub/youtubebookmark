@@ -38,18 +38,7 @@
         description=" Hello World"
         category="web developement"
       />
-      <VideoCard
-        title="The Secret to Superhuman Performance"
-        cover="https://www.youtube.com/watch?v=bQzIQa5YKvw"
-        description=" Hello world"
-        category="design"
-      />
-      <VideoCard
-        title="Simple Steps to Financial Freedom"
-        cover="https://www.youtube.com/watch?v=DKSzY7Dg-rA"
-        description=" Hello World"
-        category="sport"
-      />
+     
       
     </div>  
   </div>
