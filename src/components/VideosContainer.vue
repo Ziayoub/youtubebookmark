@@ -1,25 +1,57 @@
 <template>
-  <div class="d-flex flex-wrap">
-    <VideoCard
-      title="BUSINESS"
-      cover="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2255&q=80"
-    />
-    <VideoCard
-      title="SCIENCE"
-      cover="https://images.unsplash.com/photo-1564325724739-bae0bd08762c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
-    />
-    <VideoCard
-      title="SPORT"
-      cover="https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2600&q=80"
-    />
-    <VideoCard
-      title="MUSIC"
-      cover="https://images.unsplash.com/photo-1488376739361-ed24c9beb6d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2255&q=80"
-    />
-    <VideoCard
-      title="EDUCATION"
-      cover="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1309&q=80"
-    />
+  <div class="p-5  d-flex flex-wrap">
+    <h2>All Videos</h2>
+    <div class="d-flex flex-wrap w-100 mt-5 text-center">
+      <VideoCard
+        title="The Secret to Superhuman Performance"
+        cover="https://www.youtube.com/watch?v=bQzIQa5YKvw"
+        description=" Hello world"
+        category="sport"
+      />
+      <VideoCard
+        title="Simple Steps to Financial Freedom"
+        cover="https://www.youtube.com/watch?v=DKSzY7Dg-rA"
+        description=" Hello World"
+        category="podcast"
+      />
+      <VideoCard
+        title="Une approche minimaliste de la finance personnelle"
+        cover="https://www.youtube.com/watch?v=bQzIQa5YKvw"
+        description=" Hello world"
+        category="graphic design"
+      />
+      <VideoCard
+        title="Comment se réveiller avant 6 heures chaque jour"
+        cover="https://www.youtube.com/watch?v=DKSzY7Dg-rA"
+        description=" Hello World"
+        category="Business"
+      />
+      <VideoCard
+        title="Use a generic close icon for dismissing content"
+        cover="https://www.youtube.com/watch?v=bQzIQa5YKvw"
+        description=" Hello world"
+        category="Learning"
+      />
+      <VideoCard
+        title="How To Add Video Popup In Website Using HTML CSS Bootstrap | Add Video On HTML Website Pop-up"
+        cover="https://www.youtube.com/watch?v=DKSzY7Dg-rA"
+        description=" Hello World"
+        category="web developement"
+      />
+      <VideoCard
+        title="The Secret to Superhuman Performance"
+        cover="https://www.youtube.com/watch?v=bQzIQa5YKvw"
+        description=" Hello world"
+        category="design"
+      />
+      <VideoCard
+        title="Simple Steps to Financial Freedom"
+        cover="https://www.youtube.com/watch?v=DKSzY7Dg-rA"
+        description=" Hello World"
+        category="sport"
+      />
+      
+    </div>  
   </div>
 </template>
 
@@ -35,4 +67,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+
 </style>

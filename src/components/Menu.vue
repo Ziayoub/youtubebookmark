@@ -33,10 +33,14 @@
     padding: 15px 20px;
     /*background-color: yellow;*/
     border-bottom: 1px solid whitesmoke;
+    border-left: 4px solid transparent;
     cursor: pointer;
+    
 }
 
 .menu-item:hover {
     background-color: rgb(245, 245, 245);
+    border-left: 4px solid #1E88E5;
+   
 }
 </style>
