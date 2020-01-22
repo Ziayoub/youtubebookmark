@@ -12,33 +12,15 @@
         title="Simple Steps to Financial Freedom"
         cover="https://www.youtube.com/watch?v=DKSzY7Dg-rA"
         description=" Hello World"
-        category="podcast"
+        category="sport"
       />
-      <VideoCard
-        title="Une approche minimaliste de la finance personnelle"
-        cover="https://www.youtube.com/watch?v=bQzIQa5YKvw"
-        description=" Hello world"
-        category="graphic design"
-      />
-      <VideoCard
-        title="Comment se réveiller avant 6 heures chaque jour"
+       <VideoCard
+        title="Simple Steps to Financial Freedom"
         cover="https://www.youtube.com/watch?v=DKSzY7Dg-rA"
         description=" Hello World"
-        category="Business"
+        category="sport"
       />
-      <VideoCard
-        title="Use a generic close icon for dismissing content"
-        cover="https://www.youtube.com/watch?v=bQzIQa5YKvw"
-        description=" Hello world"
-        category="Learning"
-      />
-      <VideoCard
-        title="How To Add Video Popup In Website Using HTML CSS Bootstrap | Add Video On HTML Website Pop-up"
-        cover="https://www.youtube.com/watch?v=DKSzY7Dg-rA"
-        description=" Hello World"
-        category="web developement"
-      />
-     
+      
       
     </div>  
   </div>

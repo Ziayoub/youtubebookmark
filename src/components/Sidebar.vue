@@ -18,7 +18,6 @@ export default {
 </script>
 
 <style>
-.sidebar-content {
-}
+
 
 </style>

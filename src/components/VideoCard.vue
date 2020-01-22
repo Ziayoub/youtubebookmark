@@ -1,12 +1,16 @@
 <template>
-  <div class="card m-3" style="width: 18rem;">
-    <img class="card-img-top" :src="cover" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">{{ title }}</h5>
-      <p class="card-text">{{ description }}</p>
-      <a href="#" class="btn btn-primary">{{ buttonText || 'ButtonText' }}</a>
-    </div>
-  </div>
+  <router-link to="/video">
+    <div class="card mr-5 mt-5 p-2" style="width: 18rem;">
+        <div class="embed-responsive embed-responsive-16by9 ">
+          <iframe class="embed-responsive-item" :src="cover" frameborder="0"></iframe>
+        </div>
+        <div class="card-body px-2 pb-0">
+          <h6 class="card-title">{{ title }}</h6>
+          <p class="card-text text-secondary">{{ description }}</p>
+           <span class="text-secondary">Category: <span class="badge badge-info"> {{ category }}</span></span>
+        </div>
+      </div> 
+  </router-link>
 </template>
 
 <script>
@@ -22,7 +26,8 @@ export default {
       type: String,
       default: ''
     },
-    buttonText: String,
+    category: String,
+   
   }
 }
 </script>
