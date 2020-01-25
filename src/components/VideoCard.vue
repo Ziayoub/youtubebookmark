@@ -1,8 +1,8 @@
 <template>
   <router-link to="/video">
-    <div class="card mr-5 mt-5 p-2" style="width: 18rem;">
+    <div class="card mr-4 mt-5 p-2" style="width: 18rem;">
         <div class="embed-responsive embed-responsive-16by9 ">
-          <iframe class="embed-responsive-item" :src="cover" frameborder="0"></iframe>
+          <iframe class="embed-responsive-item" :src="cover" frameborder="0" ></iframe>
         </div>
         <div class="card-body px-2 pb-0">
           <h6 class="card-title">{{ title }}</h6>
