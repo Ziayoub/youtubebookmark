@@ -27,12 +27,13 @@ h3 {
   padding: 40px;
   height: 200px;
   width: 300px;
-  border: none;
+  text-decoration: none;
+  color: white;
 }
 
 .category:hover {
   transform: translateY(-3px);
-  box-shadow: 2px 4px .6rem rgba(0, 0, 0, .1)
+  box-shadow: 1px 3px .6rem rgba(0, 0, 0, .4)
 }
 
 
