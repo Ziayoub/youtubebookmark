@@ -2,15 +2,13 @@
   <div class="p-5 d-flex flex-wrap">
     <h2>Categories</h2>
       <div class="d-flex w-100 mt-5 flex-wrap text-center text-uppercase">
-        <Category name="Education" color="#313C74" icon="book-outline" />
-        <Category name="Podcast" color="#57AFB9" icon="video-outline"/>
-        <Category name="Sport" color="#E68675" icon="alert-triangle-outline"/>
-        <Category name="business" color="#A0CC55" icon="layers-outline"/>
-        <Category name="Motivation" color="#F3BC7A" icon="at-outline"/>
-        <Category name="Music" color="#0F6B59" icon="music"/>
-        <Category name="kitchen" color="#E3D9C8" icon="bell-outline"/>
-        <Category name="learning" color="#547BCD" icon="bulb-outline"/>
-        <Category name="learning" color="#14C39E" icon="github-outline"/>
+        <Category id="education" name="Education" color="#313C74" icon="book-outline" />
+        <Category id="podcast" name="Podcast" color="#57AFB9" icon="video-outline"/>
+        <Category id="sport" name="Sport" color="#E68675" icon="alert-triangle-outline"/>
+        <Category id="business" name="business" color="#A0CC55" icon="layers-outline"/>
+        <Category id="motivation" name="Motivation" color="#F3BC7A" icon="at-outline"/>
+        <Category id="music" name="Music" color="#0F6B59" icon="music"/>
+        <Category id="kitchen" name="kitchen" color="#E3D9C8" icon="bell-outline"/>
       </div>
   </div>
 </template>

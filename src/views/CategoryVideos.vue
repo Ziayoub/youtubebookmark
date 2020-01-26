@@ -10,6 +10,8 @@
       <div class="content">
         <div class="content-container">
           <VideosOfCategory/>
+
+          {{ category }}
         </div>
       </div>
 
@@ -28,6 +30,10 @@ export default {
     Sidebar,
     Header,
     VideosOfCategory
+  },
+  props: {
+    route: Object,
+    category: String
   }
 }
 </script>

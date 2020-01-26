@@ -1,10 +1,10 @@
 <template>
-  <router-link to="/videos-of-category"  >
+  <router-link :to="`/${id}/videos`" >
     <div class="category card mr-5 mt-5" :style="{ backgroundColor: color }">
       <i :class="['icon', `eva eva-${icon}`]" />
       <h4>{{ name }}</h4>
     </div>
-  </router-link>  
+  </router-link>
 </template>
 
 <script>
@@ -12,7 +12,8 @@ export default {
   props: {
     name: String,
     icon: String,
-    color: String
+    color: String,
+    id: String
   }
 }
 </script>
