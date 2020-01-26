@@ -53,7 +53,7 @@ const videos = [
 ];
 
 
-// TODO Replace category_id property in videos with the category object.
+// Replace category_id property in videos with the category object.
 videos.forEach((v) => {
   v.category = categories.find(c => c.id === v.category_id);
   return v;
