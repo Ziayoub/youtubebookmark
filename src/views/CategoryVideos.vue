@@ -9,9 +9,10 @@
 
       <div class="content">
         <div class="content-container">
-          <VideosOfCategory/>
-
-          {{ category }}
+          <div class="p-5 d-flex flex-wrap">
+            <h2>Videos of Category</h2>
+            <VideosContainer :categoryId="categoryId" />
+          </div>
         </div>
       </div>
 
@@ -22,18 +23,17 @@
 <script>
 // @ is an alias to /src
 import Sidebar from '@/components/Sidebar.vue'
-import VideosOfCategory from '@/components/VideosOfCategory.vue'
+import VideosContainer from '@/components/VideosContainer.vue'
 import Header from '@/components/Header.vue'
 
 export default {
   components: {
     Sidebar,
     Header,
-    VideosOfCategory
+    VideosContainer
   },
   props: {
-    route: Object,
-    category: String
+    categoryId: String
   }
 }
 </script>

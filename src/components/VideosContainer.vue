@@ -1,47 +1,43 @@
 <template>
-  <div class="p-5  d-flex flex-wrap">
-    <h2>All Videos</h2>
-    <div class="d-flex flex-wrap w-100 mt-5 text-center">
-      <VideoCard
-        title="Une approche minimaliste de la finance personnelle"
-        cover="http://img.youtube.com/vi/tgbNymZ7vqY/0.jpg"
-        description=" Hello world"
-        category="graphic design"
-      />
-      <VideoCard
-        title="Comment se réveiller avant 6 heures chaque jour"
-        cover="http://img.youtube.com/vi/u8dW8DrcSmo/0.jpg"
-        description=" Hello World"
-        category="Business"
-      />
-      <VideoCard
-        title="Use a generic close icon for dismissing content"
-         cover="http://img.youtube.com/vi/FfptlvPMdII/0.jpg"
-        description=" Hello world"
-        category="Learning"
-      />
-      <VideoCard
-        title="How To Add Video Popup In Website Using HTML CSS Bootstrap | Add Video On HTML Website Pop-up"
-         cover="http://img.youtube.com/vi/8iU8LPEa4o0/0.jpg"
-        description=" Hello World"
-        category="web developement"
-      />
-    </div>
+  <div class="d-flex flex-wrap w-100 mt-5 text-center">
+    <div v-if="videos.length === 0">No videos</div>
+    <VideoCard
+      v-for="video in videos"
+      :key="video.title"
+      :title="video.title"
+      :cover="`http://img.youtube.com/vi/${video.youtube_id}/0.jpg`"
+      :description="video.description"
+      :category="video.category.name"
+    />
   </div>
 </template>
 
 <script>
 import VideoCard from '@/components/VideoCard.vue'
+import videosData from '@/data/videos';
 
 export default {
   components: {
     VideoCard
   },
+  props: {
+    categoryId: {
+      type: String,
+      default: ''
+    }
+  },
+  computed: {
+    videos: function () {
+      return this.getVideos();
+    }
+  },
+  methods: {
+    getVideos: function() {
+      if (this.categoryId === '') {
+        return videosData;
+      }
+      return videosData.filter(v => v.category_id === this.categoryId)
+    }
+  }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-
-</style>
