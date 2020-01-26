@@ -24,10 +24,9 @@ const routes = [
     component: SingleVideo
   },
   {
-    path: '/:category/videos',
+    path: '/:categoryId/videos',
     name: 'videos-of-category',
     props: true,
-    // props: (route) => ({ route: route }),
     component: CategoryVideos
   }
 ];

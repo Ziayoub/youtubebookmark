@@ -3,12 +3,16 @@
     - email
     - password
 - Categories
+    - id
     - name
     - color
     - icon
+    - created_at
+    - updated_at
 - Videos
-    - name
-    - url
+    - title
+    - video_id
+    - description
     - category_id
     - created_at
     - updated_at
