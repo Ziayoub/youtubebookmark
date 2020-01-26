@@ -26,7 +26,7 @@ const videos = [
     updated_at: '2020-01-25 13:00:00'
   },
   {
-    title: 'Comment se réveiller avant 6 heures chaque jour',
+    title: 'Learn Vuejs',
     youtube_id: 'u8dW8DrcSmo',
     description: ' Hello World',
     category_id: 'business',

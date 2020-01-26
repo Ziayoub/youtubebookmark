@@ -10,7 +10,7 @@
       <div class="content">
         <div class="content-container">
           <div class="p-5 d-flex flex-wrap">
-            <h2>Videos of Category</h2>
+            <h2>Videos <small class="text-secondary"> &nbsp;— Category: {{categoryId}}</small></h2>
             <VideosContainer :categoryId="categoryId" />
           </div>
         </div>

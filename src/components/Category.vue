@@ -1,6 +1,6 @@
 <template>
   <router-link :to="`/${id}/videos`" >
-    <div class="category card mr-5 mt-5" :style="{ backgroundColor: color }">
+    <div class="category card mr-5 mb-5" :style="{ backgroundColor: color }">
       <i :class="['icon', `eva eva-${icon}`]" />
       <h4>{{ name }}</h4>
     </div>

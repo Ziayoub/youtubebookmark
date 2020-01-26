@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex flex-wrap w-100 mt-5 text-center">
+  <div class="d-flex flex-wrap w-100 mt-5">
     <div v-if="videos.length === 0">No videos</div>
     <VideoCard
       v-for="video in videos"
@@ -7,7 +7,7 @@
       :title="video.title"
       :cover="`http://img.youtube.com/vi/${video.youtube_id}/0.jpg`"
       :description="video.description"
-      :category="video.category.name"
+      :category="video.category"
     />
   </div>
 </template>

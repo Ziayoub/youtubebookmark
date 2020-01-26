@@ -3,6 +3,9 @@
 </template>
 
 <style>
+body {
+  font-family: 'Lato', sans-serif !important;
+}
 * {
   box-sizing: border-box;
 }

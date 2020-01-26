@@ -1,11 +1,18 @@
 <template>
   <router-link to="/video">
-    <div class="card mr-4 mt-5 p-2" style="width: 18rem;">
+    <div class="card mr-4 mb-5" style="width: 18rem;">
         <img class="youtube-thumb" :src="cover" />
-        <div class="card-body px-2 pb-0">
-          <h6 class="card-title">{{ title }}</h6>
+
+        <div
+          class="category-banner py-1 px-4"
+          :style="{backgroundColor: category.color}"
+        >
+          {{ category.name }}
+        </div>
+
+        <div class="card-body px-4 py-4">
+          <h6 class="card-title mb-1">{{ title }}</h6>
           <p class="card-text text-secondary">{{ description }}</p>
-           <span class="text-secondary">Category: <span class="badge badge-info"> {{ category }}</span></span>
         </div>
       </div>
   </router-link>
@@ -24,8 +31,10 @@ export default {
       type: String,
       default: ''
     },
-    category: String,
-
+    category: {
+      type: Object,
+      default() { return {} }
+    },
   }
 }
 </script>
@@ -36,4 +45,22 @@ export default {
   width: 100%;
   object-fit: cover;
 }
+
+.card-title {
+  font-size: 22px;
+  color: black;
+  font-weight: bold;
+  max-height: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.category-banner {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  color: white;
+}
+
 </style>
