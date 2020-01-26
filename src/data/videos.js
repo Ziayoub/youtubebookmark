@@ -53,7 +53,18 @@ const videos = [
 ];
 
 
-// Replace category_id property in videos with the category object.
+/**
+ * This code adds "category" property to the each video in the videos array.
+ *
+ * {                                       {
+ *   title: "..."                            title: "..."
+ *   category_id: "sport"                    category_id: "sport",
+ * }                             ==>         category: {
+ *                                             id: "sport",
+ *                                             ...
+ *                                           }
+ *                                         }
+ */
 videos.forEach((v) => {
   v.category = categories.find(c => c.id === v.category_id);
   return v;
