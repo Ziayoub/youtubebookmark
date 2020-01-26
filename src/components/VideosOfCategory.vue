@@ -4,19 +4,17 @@
     <div class="d-flex flex-wrap w-100 mt-5 text-center">
       <VideoCard
         title="Une approche minimaliste de la finance personnelle"
-        cover="https://www.youtube.com/embed/tgbNymZ7vqY"
+        cover="http://img.youtube.com/vi/tgbNymZ7vqY/0.jpg"
         description=" Hello world"
         category="graphic design"
       />
       <VideoCard
         title="Comment se réveiller avant 6 heures chaque jour"
-        cover="https://www.youtube.com/embed/u8dW8DrcSmo"
+        cover="http://img.youtube.com/vi/u8dW8DrcSmo/0.jpg"
         description=" Hello World"
         category="Business"
       />
-      
-      
-    </div>  
+    </div>
   </div>
 </template>
 

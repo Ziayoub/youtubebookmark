@@ -2,34 +2,31 @@
   <div class="p-5  d-flex flex-wrap">
     <h2>All Videos</h2>
     <div class="d-flex flex-wrap w-100 mt-5 text-center">
-      
       <VideoCard
         title="Une approche minimaliste de la finance personnelle"
-        cover="https://www.youtube.com/embed/tgbNymZ7vqY"
+        cover="http://img.youtube.com/vi/tgbNymZ7vqY/0.jpg"
         description=" Hello world"
         category="graphic design"
       />
       <VideoCard
         title="Comment se réveiller avant 6 heures chaque jour"
-        cover="https://www.youtube.com/embed/u8dW8DrcSmo"
+        cover="http://img.youtube.com/vi/u8dW8DrcSmo/0.jpg"
         description=" Hello World"
         category="Business"
       />
       <VideoCard
         title="Use a generic close icon for dismissing content"
-         cover="https://www.youtube.com/embed/FfptlvPMdII"
+         cover="http://img.youtube.com/vi/FfptlvPMdII/0.jpg"
         description=" Hello world"
         category="Learning"
       />
       <VideoCard
         title="How To Add Video Popup In Website Using HTML CSS Bootstrap | Add Video On HTML Website Pop-up"
-         cover="https://www.youtube.com/embed/8iU8LPEa4o0"
+         cover="http://img.youtube.com/vi/8iU8LPEa4o0/0.jpg"
         description=" Hello World"
         category="web developement"
       />
-     
-      
-    </div>  
+    </div>
   </div>
 </template>
 
