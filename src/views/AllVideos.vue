@@ -9,7 +9,11 @@
 
       <div class="content">
         <div class="content-container">
-          <VideosContainer />
+
+          <div class="p-5 d-flex flex-wrap">
+            <h2>All Videos</h2>
+            <VideosContainer />
+          </div>
         </div>
       </div>
 
