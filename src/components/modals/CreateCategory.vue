@@ -33,12 +33,28 @@
         </div>
 
         <!-- Icon input -->
-
-
+         <div class="form-group">
+          <label for="icon">Icon</label>
+          <v-select :value="icon" @input="setIcon" :options="iconOptions" label="iconName" >
+            <template slot="option" slot-scope="option" >
+              <div class="d-flex align-items-center py-2 ">
+                <div :style="{
+                    display: 'inline-block',
+                    height: '20px',
+                    width: '20px',
+                  
+                  }"
+                />
+                  <span class="ml-2" style="background-color: pink;width: 100%;"><i :class="['icon', `eva eva-${option.iconName}`]" :style="{fontSize: '22px', marginRight: '10px', backgroundColor: 'red'}"/> {{ option.iconName }}</span> 
+              </div>
+            </template>
+          </v-select>
+        </div>
       </div>
 
-      <div>
-        <button type="submit" class="btn btn-primary pull-right">Save</button>
+      <div class="pull-right">
+        <button type="cancel" class="btn btn-primary mr-1">Cancel</button>
+        <button type="submit" class="btn btn-primary ">Save</button>
       </div>
 
     </form>
@@ -47,15 +63,21 @@
 
 <script>
 import colorOptions from '../../data/colorOptions';
+import iconOptions from '../../data/iconOptions';
 
 export default {
   props: {
-    name: String
+    name: String,
+    iconName: String
   },
   data: () => ({
     categoryName: '',
+
     color: colorOptions[0],
-    colorOptions
+    colorOptions,
+
+    icon : iconOptions[0],
+    iconOptions
   }),
   methods: {
     setColor(value) {
@@ -63,7 +85,10 @@ export default {
     },
     setCategoryName(e) {
       this.categoryName = e.target.value;
-    }
+    },
+    setIcon(value) {
+      this.icon = value;
+    },
   }
 
 }
