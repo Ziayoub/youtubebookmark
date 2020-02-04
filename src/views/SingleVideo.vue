@@ -8,8 +8,8 @@
       <Header/>
 
       <div class="content">
-        <div class="content-container">
-          <VideoDetail/>
+        <div class="content-container p-5">
+            <VideoDetail :categoryId="categoryId" />
         </div>
       </div>
 
@@ -22,13 +22,34 @@
 import Sidebar from '@/components/Sidebar.vue'
 import VideoDetail from '@/components/VideoDetail.vue'
 import Header from '@/components/Header.vue'
+import videosData from '@/data/videos';
 
 export default {
   components: {
     Sidebar,
     Header,
     VideoDetail
+  },
+   props: {
+    categoryId: {
+      type: String,
+      default: ''
+    }
+  },
+  computed: {
+    video: function () {
+      return this.getVideo();
+    }
+  },
+  methods: {
+    getVideo: function() {
+      if (this.categoryId === '') {
+        return videosData;
+      }
+      return videosData.filter(v => v.category_id === this.categoryId)
+    }
   }
+  
 }
 </script>
 
