@@ -8,8 +8,11 @@
       <Header/>
 
       <div class="content">
-        <div class="content-container p-5">
-            <VideoDetail :categoryId="categoryId" />
+        <div class="content-container">
+          <div class="p-5">
+            <h2>Video <small class="text-secondary"> &nbsp;— Video: {{ videoId }}</small></h2>
+            <VideoDetail :videoId="videoId" />
+          </div>  
         </div>
       </div>
 
@@ -22,7 +25,7 @@
 import Sidebar from '@/components/Sidebar.vue'
 import VideoDetail from '@/components/VideoDetail.vue'
 import Header from '@/components/Header.vue'
-import videosData from '@/data/videos';
+
 
 export default {
   components: {
@@ -30,23 +33,10 @@ export default {
     Header,
     VideoDetail
   },
-   props: {
-    categoryId: {
+  props: {
+    videoId: {
       type: String,
       default: ''
-    }
-  },
-  computed: {
-    video: function () {
-      return this.getVideo();
-    }
-  },
-  methods: {
-    getVideo: function() {
-      if (this.categoryId === '') {
-        return videosData;
-      }
-      return videosData.filter(v => v.category_id === this.categoryId)
     }
   }
   

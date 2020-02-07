@@ -7,28 +7,28 @@ import CategoryVideos from "../views/CategoryVideos";
 
 Vue.use(VueRouter)
 
-const routes = [
-  {
-    path: '/',
-    name: 'categories',
-    component: Categories
-  },
-  {
-    path: '/all-videos',
-    name: 'all-Videos',
-    component: AllVideos
-  },
-  {
-    path: '/video',
-    name: 'video',
-    component: SingleVideo
-  },
-  {
-    path: '/:categoryId/videos',
-    name: 'videos-of-category',
-    props: true,
-    component: CategoryVideos
-  }
+const routes = [{
+        path: "/",
+        name: "categories",
+        component: Categories
+    },
+    {
+        path: "/all-videos",
+        name: "all-Videos",
+        component: AllVideos
+    },
+    {
+        path: "/:videoId/video",
+        name: "video",
+        props: true,
+        component: SingleVideo
+    },
+    {
+        path: "/:categoryId/videos",
+        name: "videos-of-category",
+        props: true,
+        component: CategoryVideos
+    }
 ];
 
 const router = new VueRouter({
