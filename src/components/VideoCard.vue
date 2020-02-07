@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/video">
+  <router-link :to="`/${videoId}/video`">
     <div class="card mr-4 mb-5" style="width: 18rem;">
         <img class="youtube-thumb" :src="cover" />
 
@@ -14,13 +14,16 @@
           <h6 class="card-title mb-1">{{ title }}</h6>
           <p class="card-text text-secondary">{{ description }}</p>
         </div>
-      </div>
+    </div>
   </router-link>
 </template>
 
 <script>
 export default {
   props: {
+    videoId: {
+      type: String
+    },
     title: {
       type: String,
       default: '',

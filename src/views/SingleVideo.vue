@@ -9,7 +9,10 @@
 
       <div class="content">
         <div class="content-container">
-          <VideoDetail/>
+          <div class="p-5">
+            <h2>Video <small class="text-secondary"> &nbsp;— Video: {{ videoId }}</small></h2>
+            <VideoDetail :videoId="videoId" />
+          </div>  
         </div>
       </div>
 
@@ -23,12 +26,20 @@ import Sidebar from '@/components/Sidebar.vue'
 import VideoDetail from '@/components/VideoDetail.vue'
 import Header from '@/components/Header.vue'
 
+
 export default {
   components: {
     Sidebar,
     Header,
     VideoDetail
+  },
+  props: {
+    videoId: {
+      type: String,
+      default: ''
+    }
   }
+  
 }
 </script>
 

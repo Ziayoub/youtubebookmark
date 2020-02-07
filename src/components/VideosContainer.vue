@@ -6,6 +6,7 @@
       :key="video.title"
       :title="video.title"
       :cover="`http://img.youtube.com/vi/${video.youtube_id}/0.jpg`"
+      :videoId="video.youtube_id"
       :description="video.description"
       :category="video.category"
     />
