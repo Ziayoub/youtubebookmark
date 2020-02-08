@@ -4,6 +4,8 @@ import Categories from "../views/Categories";
 import AllVideos from '../views/AllVideos';
 import SingleVideo from "../views/SingleVideo";
 import CategoryVideos from "../views/CategoryVideos";
+import Login from "../views/Login"
+import Register from "../views/Register";
 
 Vue.use(VueRouter)
 
@@ -28,6 +30,16 @@ const routes = [{
         name: "videos-of-category",
         props: true,
         component: CategoryVideos
+    },
+    {
+        path: "/login",
+        name: "login",
+        component: Login
+    },
+    {
+        path: "/Register",
+        name: "register",
+        component: Register
     }
 ];
 
