@@ -6,11 +6,17 @@ import SingleVideo from "../views/SingleVideo";
 import CategoryVideos from "../views/CategoryVideos";
 import Login from "../views/Login"
 import Register from "../views/Register";
+import Home from "../views/Home";
 
 Vue.use(VueRouter)
 
 const routes = [{
         path: "/",
+        name: "home",
+        component: Home
+    },
+    {
+        path: "/categories",
         name: "categories",
         component: Categories
     },

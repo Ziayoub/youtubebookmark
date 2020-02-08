@@ -2,7 +2,7 @@
     <div class="menu">
         <div class="menu-header">Menu</div>
         <div class="menu-list">
-            <router-link to="/">
+            <router-link to="/categories">
               <div class="menu-item">Categories</div>
             </router-link>
             <router-link to="/all-videos">
