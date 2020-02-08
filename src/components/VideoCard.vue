@@ -1,6 +1,6 @@
 <template>
-  <router-link :to="`/${videoId}/video`">
     <div class="card mr-4 mb-5" style="width: 18rem;">
+      <router-link :to="`/${videoId}/video`">
         <img class="youtube-thumb" :src="cover" />
 
         <div
@@ -14,8 +14,12 @@
           <h6 class="card-title mb-1">{{ title }}</h6>
           <p class="card-text text-secondary">{{ description }}</p>
         </div>
+      </router-link>
+
+      <div class="card-footer d-flex justify-content-end">
+        <i class="eva eva-trash-2-outline" style="cursor: pointer"></i>
+      </div>
     </div>
-  </router-link>
 </template>
 
 <script>
@@ -64,6 +68,10 @@ export default {
   letter-spacing: 1px;
   font-size: 11px;
   color: white;
+}
+
+.card-footer {
+  background-color: white;
 }
 
 </style>
