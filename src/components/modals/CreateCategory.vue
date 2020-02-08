@@ -38,14 +38,13 @@
           <v-select :value="icon" @input="setIcon" :options="iconOptions" label="iconName" >
             <template slot="option" slot-scope="option" >
               <div class="d-flex align-items-center py-2 ">
-                <div :style="{
-                    display: 'inline-block',
-                    height: '20px',
-                    width: '20px',
-                  
-                  }"
+                <i
+                  :class="['icon', `eva eva-${option.iconName}`]"
+                  :style="{fontSize: '22px', margin: '0px'}"
                 />
-                  <span class="ml-2" style="background-color: pink;width: 100%;"><i :class="['icon', `eva eva-${option.iconName}`]" :style="{fontSize: '22px', marginRight: '10px', backgroundColor: 'red'}"/> {{ option.iconName }}</span> 
+                <div class="ml-2">
+                  {{ option.iconName }}
+                </div>
               </div>
             </template>
           </v-select>
