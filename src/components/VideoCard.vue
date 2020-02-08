@@ -17,7 +17,11 @@
       </router-link>
 
       <div class="card-footer d-flex justify-content-end">
-        <i class="eva eva-trash-2-outline" style="cursor: pointer"></i>
+        <i
+          class="eva eva-trash-2-outline"
+          style="cursor: pointer"
+          @click="deleteVideo"
+        ></i>
       </div>
     </div>
 </template>
@@ -42,6 +46,15 @@ export default {
       type: Object,
       default() { return {} }
     },
+  },
+  methods: {
+    deleteVideo: function() {
+      if (window.confirm("Do you really want to delete this video?")) {
+        console.log('deleted');
+      } else {
+        console.log('not deleted');
+      }
+    }
   }
 }
 </script>
